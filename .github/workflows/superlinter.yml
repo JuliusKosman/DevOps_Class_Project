@@ -15,16 +15,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Menggunakan versi checkout terbaru
+        uses: actions/checkout@v3
 
       - name: Set up Node.js environment
-        uses: actions/setup-node@v3  # Menyediakan environment yang diperlukan
+        uses: actions/setup-node@v3
 
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: true  # Pastikan seluruh kode di-lint
-          VALIDATE_JAVASCRIPT_ES: true  # Jika ada file JS untuk divalidasi
-          VALIDATE_PYTHON: true  # Jika ada file Python yang perlu di-lint
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_PYTHON: true
+          
