@@ -1,0 +1,5 @@
+{
+  "default": true,
+  "MD013": false,  // Matikan peraturan tentang panjang baris
+  "MD033": false   // Matikan peraturan untuk tag HTML
+}
