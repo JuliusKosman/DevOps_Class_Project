@@ -28,4 +28,3 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_PYTHON: true
-          
